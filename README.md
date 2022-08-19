@@ -1,5 +1,7 @@
 # Desafio 01 - Praticando os conceitos do React Native
 
+[Download APK](https://expo.dev/artifacts/eas/iH2XRujc7Tj6b9aUXR2vNs.apk) 
+
 # Sobre o desafio
 
 Nesse desafio, você vai desenvolver uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
