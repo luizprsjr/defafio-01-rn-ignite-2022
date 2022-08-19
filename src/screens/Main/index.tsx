@@ -16,7 +16,7 @@ import { Feather } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import Clipboard from '../../assets/Clipboard/Clipboard.png';
-import Logo from '../../assets/Logo/Logo.png';
+import { Header } from '../../components/Header';
 import { Task } from '../../components/Task';
 import { styles } from './styles';
 
@@ -74,11 +74,11 @@ export function Main() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Image
-          style={styles.logo}
-          source={Logo}
-        />
+
+      <Header />
+
+      <View style={styles.tasksContainer}>
+
         <View style={styles.newTask}>
           <TextInput
             style={styles.input}
@@ -92,8 +92,6 @@ export function Main() {
             <Feather name="plus-circle" size={16} color="#F2F2F2" />
           </TouchableOpacity>
         </View>
-      </View>
-      <View style={styles.tasksContainer}>
         <View style={styles.tasksStatus}>
           <View style={styles.statusBox}>
             <Text style={[styles.statusTitle, { color: '#4EA8DE' }]}>Criadas</Text>

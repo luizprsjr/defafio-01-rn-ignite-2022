@@ -1,27 +1,19 @@
 import { StyleSheet } from 'react-native';
-import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 export const styles = StyleSheet.create({
   container: {
     zIndex: 0,
     flex: 1,
   },
-  header: {
-    zIndex: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 173 + getStatusBarHeight(),
-    paddingTop: getStatusBarHeight(),
-    backgroundColor: '#0D0D0D',
+  tasksContainer: {
+    flex: 1,
+    paddingHorizontal: 24,
+    backgroundColor: '#1A1A1A',
   },
-  logo: {},
   newTask: {
-    position: 'absolute',
-    zIndex: 2,
     flexDirection: 'row',
     width: '100%',
-    bottom: -27,
-    paddingHorizontal: 24,
+    top: -27,
   },
   input: {
     flex: 1,
@@ -40,22 +32,15 @@ export const styles = StyleSheet.create({
     borderRadius: 6,
     backgroundColor: '#1E6F9F',
   },
-  tasksContainer: {
-    zIndex: 1,
-    flex: 1,
-    paddingHorizontal: 24,
-    backgroundColor: '#1A1A1A',
-  },
   tasksStatus: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 55,
+    marginTop: 5,
     marginBottom: 20,
   },
   statusBox: {
     flexDirection: 'row',
     alignItems: 'center',
-
   },
   statusTitle: {
     fontWeight: 'bold',
